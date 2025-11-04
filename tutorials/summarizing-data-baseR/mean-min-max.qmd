@@ -2,21 +2,17 @@
 title: "Calculating summary statistics of variables"
 ---
 
-The examples in this lesson are based on a dataset about profits from stocks and bonds. First, we have a look at the dataset:
-
-
 ```{r, echo = FALSE}
 stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
 ```
 
-```{r, eval = FALSE}
-View(stocks)
+The examples in this lesson are based on a data set about profits from stocks and bonds. We can take a look at the data using head(), which shows us the first 6 rows of the data frame.
+
+```{r}
+head(stocks)
 ```
 
-This is what we see:
-
-![](/assets/figures/view_stocks.png)
-The dataset contains information about the average change in the price of stocks and bonds during the period 1928-2015. Below is a description of the variables that can be found in the dataset.
+The data set contains five variables. For which we provide some extra information here: 
 
 -   **YEAR**: the year
 -   **TBONDS**: Price of Treasury Bonds, US government bonds. For example, a figure of 4 means an increase of 4%.
@@ -24,8 +20,13 @@ The dataset contains information about the average change in the price of stocks
 -   **TBONDS_D**: Indicates whether Treasury Bonds rose (1) or fell/remained the same (0) that year.
 -   **SPSTOCKS_D**: Indicates whether the S&P 500 stocks rose (1) or fell/remained the same (0) that year.
 
+The str() function tells us what the class of each variable is. You will notice that most variables in the stocks data contain integers.
 
-We will explore this dataset. At the start, we are interested to get more information about our collected variables. In most cases, we want at least to know the following parameters:
+```{r}
+str(stocks)
+```
+
+We will explore this data set further. At the start, we are interested to get more information about our collected variables. In most cases, we want at least to know the following parameters:
 
 -   the mean
 -   the standard deviation
@@ -46,7 +47,7 @@ You can use these for a single variable (at a time). You can call up each variab
 
 ## Practice
 
-Try requesting the mean of TBONDS from the Stocks dataset. 
+Try requesting the mean of SPSTOCKS from the Stocks dataset. 
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}
@@ -58,7 +59,7 @@ Try requesting the mean of TBONDS from the Stocks dataset.
 ## {{< var tab_title.solution >}}
 
 ```{r}
-mean(stocks$TBONDS)
+mean(stocks$SPSTOCKS)
 ```
 ::::
 

@@ -6,17 +6,14 @@ title: "Frequency Tables"
 songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
 ```
 
+
 In 2009, The Guardian newspaper published a list entitled "1000 songs you need to hear before you die". What kind of songs would they have selected for that? That's exactly what we're going to find out now!
 
-We aquired a dataset containing the 1000 songs and information about them. After importing the data to R, we can look at the dataset with the following command:
+We aquired a dataset containing the 1000 songs and information about them. After importing the data to R, we can look at the first rows of the dataset with the following command:
 
-```{r, eval = FALSE}
-View(songs)
+```{r}
+head(songs)
 ```
-
-This is what we see:
-
-![](/assets/figures/view_songs.png)
 
 The dataset contains five columns for the characteristics of the song (which we also call "variables") and 1000 rows, one row for each song.
 
