@@ -1,0 +1,58 @@
+---
+title: "Frequency Tables"
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+
+In 2009, The Guardian newspaper published a list entitled "1000 songs you need to hear before you die". What kind of songs would they have selected for that? That's exactly what we're going to find out now!
+
+We aquired a dataset containing the 1000 songs and information about them. After importing the data to R, we can look at the first rows of the dataset with the following command:
+
+```{r}
+head(songs)
+```
+
+The dataset contains five columns for the characteristics of the song (which we also call "variables") and 1000 rows, one row for each song.
+
+We are now going to create a frequency table for the theme variable in the data set. To do this, we will use the table() function. We add the exclude = NULL argument to ensure that we can also see how many missing values there are. 
+
+```{r}
+table(songs$THEME, exclude = NULL)
+```
+
+Here you see the resulting frequency table. Frequency means how often a value occurs. In this frequency table, you can see how often each theme occurs. We can for example see that there are 145 songs about "Heartbreak" and 131 songs about "Sex".
+
+
+```{webr-r}
+#| autorun: true
+#| context: setup
+
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+::: practice
+
+## Practice
+
+Make a frequency table for the variable "YEAR". Use again the exclude = NULL argument.
+
+*NOTE:* The `songs' dataset is already loaded in the working directory of this *webr* session.
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+table(songs$YEAR, exclude = NULL)
+```
+::::
+
+:::

@@ -1,0 +1,77 @@
+---
+title: "Proportion Table"
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+We will now continue to work with the table that we made on the previous page. 
+
+As a first step, we can save the table as an object for further processing: 
+
+```{r}
+table.theme <- table(songs$THEME, exclude = NULL)
+```
+
+If we now use the command prop.table() on theme.table, we will see the proportions of the themes. This indicates how large the share of each theme is (with a number between 0 and 1). 
+
+```{r}
+prop.table(table.theme)
+```
+
+If we multiply the proportions by 100, we will get the percentages. 
+
+```{r}
+prop.table(table.theme)*100
+```
+
+```{r quiz2}
+#| echo: FALSE
+#| results: "asis"
+
+exams2forms::exams2forms(
+  file = list(
+    "prop-table_question.Rmd"
+  ),
+  edir = here::here("quizzes", "frequency-tables-baseR", "questions")
+)
+```
+
+Now, you can try to make these two tables yourself. First make a frequency table of the variable "YEAR". Save it as an object and make a proportion table using the object. 
+
+```{webr-r}
+#| autorun: true
+#| context: setup
+
+songs <- read.csv2(here::here("data", "songs.csv"), header=TRUE, sep=",")
+```
+
+::: practice
+
+## Practice
+
+Make a frequency table and a proportion table for the variable "YEAR". Use again the exclude = NULL argument.
+
+*NOTE:* The `songs' dataset is already loaded in the working directory of this *webr* session.
+
+:::: {.panel-tabset}
+## {{< var tab_title.editor >}}
+
+```{webr-r}
+
+```
+
+## {{< var tab_title.solution >}}
+
+```{r}
+table.year <- table(songs$YEAR, exclude = NULL)
+table.year
+prop.table(table.year)
+
+```
+::::
+
+:::
+
+As you can see, the table for the variable year is not very informative due to the large number of categories of the variable. Cumulative frequency tables can help with this problem. How to make them, you will learn on the next page.

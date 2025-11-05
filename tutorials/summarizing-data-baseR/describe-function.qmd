@@ -1,0 +1,21 @@
+---
+title: "Using the describe function"
+---
+
+
+```{r, echo = FALSE}
+stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", dec = ".", na.string = c("", "NA"))
+```
+
+
+
+The summary() function provides a handy overview of descriptive statistics. There is also another function that can do the same thing, and also provides a little more information: describe() from the psych package. We need to install the ‘psych’ package once and then can load it via the library command. 
+
+```{r}
+library(psych)
+describe(stocks)
+```
+
+Here we can also see, for example, the number of observations per variable (n) and the range (the difference between the minimum and maximum values observed). 
+
+

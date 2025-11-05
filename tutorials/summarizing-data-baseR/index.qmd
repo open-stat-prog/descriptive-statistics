@@ -1,0 +1,11 @@
+---
+title: "Summarizing Data"
+---
+
+In this tutorial you will learn how to use R to calculate descriptive statistics such as the mean, mode, median, standard deviation, and range.
+
+We assume that you already know the following:
+
+-   What measures of central tendency are and when to use them
+-   What measures of dispersion are and when to use them
+

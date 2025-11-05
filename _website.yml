@@ -1,8 +1,8 @@
 website:
 
-  title: "OSP Module Template"
+  title: "Descriptive Statistics"
 
-  site-url: "https://www.openstatprog.com/module-template/"
+  site-url: "https://www.openstatprog.com/descriptive-statistics/"
 
   page-navigation: true
 
@@ -20,9 +20,9 @@ website:
       - icon: github
         menu:
           - text: Source Code
-            href: https://github.com/open-stat-prog/module-template
+            href: https://github.com/open-stat-prog/descriptive-statistics
           - text: Report a Bug
-            href: https://github.com/open-stat-prog/module-template/issues
+            href: https://github.com/open-stat-prog/descriptive-statistics/issues
 
   sidebar:
     style: "floating"
@@ -30,21 +30,34 @@ website:
     contents:
       - href: index.qmd
         text: "Overview"
-      - section: tutorials/first_tutorial/index.qmd
-        text: "First Tutorial"
+      - section: tutorials/summarizing-data-baseR/index.qmd
+        text: "Summarizing Data"
         contents:
-        - href: tutorials/first_tutorial/topic1.qmd
-        - href: tutorials/first_tutorial/topic2.qmd
-        - href: tutorials/first_tutorial/topic3.qmd
-        - href: quizzes/first_tutorial/index.qmd
-          text: "Knowledge Quiz"
-      - section: tutorials/second_tutorial/index.qmd
-        text: "Second Tutorial"
+          - href: tutorials/summarizing-data-baseR/mean-min-max.qmd
+            text: "Mean, minimum and maximum"
+          - href: tutorials/summarizing-data-baseR/missing-values.qmd
+            text: "Missing values"
+          - href: tutorials/summarizing-data-baseR/summary-function.qmd
+            text: "Summary function"
+          - href: tutorials/summarizing-data-baseR/describe-function.qmd
+            text: "Describe function"
+          - href: tutorials/summarizing-data-baseR/summary.qmd
+            text: "Summary"
+      - section: tutorials/frequency-tables-baseR/index.qmd
+        text: "Frequency Tables"
         contents:
-          - href: tutorials/second_tutorial/topic1.qmd
-          - href: tutorials/second_tutorial/topic2.qmd
-          - href: quizzes/second_tutorial/index.qmd
-            text: "Knowledge Quiz"
+          - href: tutorials/frequency-tables-baseR/frequency-table.qmd
+            text: "Tables"
+          - href: tutorials/frequency-tables-baseR/prop-table.qmd
+            text: "Proportion Tables"
+          - href: tutorials/frequency-tables-baseR/cum-table.qmd
+            text: "Cumulative Proportion Tables"
+          - href: tutorials/frequency-tables-baseR/cbind-tables.qmd
+            text: "Readable Tables"
+          - href: tutorials/frequency-tables-baseR/cross-tab.qmd
+            text: "Crosstables"
+          - href: tutorials/frequency-tables-baseR/summary.qmd
+            text: "Summary"
       - href: conclusion.qmd
 
   page-footer:

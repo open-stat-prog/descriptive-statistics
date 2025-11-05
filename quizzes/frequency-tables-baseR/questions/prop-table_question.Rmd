@@ -1,0 +1,27 @@
+Question
+========
+What percentage of the total number of songs in the Guardian list are about ‘People_and_places’?
+
+Answerlist
+----------
+* 13.1
+* <NA
+* 14.5
+* 13.9
+
+Solution
+========
+
+Answerlist
+----------
+* Wrong
+* Wrong
+* Correct
+* Wrong
+
+Meta-information
+================
+exname: Bad Question
+extype: schoice
+exsolution: 0010
+exshuffle: 4

@@ -1,0 +1,27 @@
+Question
+========
+Which proportion of songs was created before the year 2000?
+
+Answerlist
+----------
+* 0.876
+* 0.888
+* 876
+* 888
+
+Solution
+========
+
+Answerlist
+----------
+* Correct
+* Wrong
+* Wrong
+* Wrong
+
+Meta-information
+================
+exname: Bad Question
+extype: schoice
+exsolution: 0010
+exshuffle: 4

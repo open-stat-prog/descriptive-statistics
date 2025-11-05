@@ -1,0 +1,36 @@
+---
+title: "Cumulative Proportion Table"
+---
+
+```{r, echo = FALSE}
+songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+```
+
+What might be clearer than the proportion table on the last page are the cumulative frequencies or proportions.
+This would allow us to see how many songs in total, or what proportion of all songs, were released before a certain year.
+
+To do this, we use the cumsum() function on the tables. First the frequency table: 
+
+```{r}
+table.year <- table(songs$YEAR, exclude = NULL)
+cumsum(table.year)
+```
+
+We can use the same on a proportion table:
+
+```{r}
+cumsum(prop.table(table.year))
+```
+
+
+```{r quiz2}
+#| echo: FALSE
+#| results: "asis"
+
+exams2forms::exams2forms(
+  file = list(
+    "cumsum-question.Rmd"
+  ),
+  edir = here::here("quizzes", "frequency-tables-baseR", "questions")
+)
+```

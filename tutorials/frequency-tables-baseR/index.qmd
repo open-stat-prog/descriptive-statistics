@@ -1,0 +1,19 @@
+---
+title: "Frequency Tables"
+---
+
+In this tutorial, you will learn:
+
+-   How to create a frequency table in R
+
+-   How to calculate proportions and cumulative proportions in a table
+
+-   How to make your table readable
+
+-   How to make cross tabulations of two variables
+
+We assume that you already know:
+
+-   What measurement levels are
+
+-   How to open a dataset (.csv) in R
