@@ -26,7 +26,7 @@ songs %>%
 ```
 
 
-If you want conditional proportions—for example, proportions within each theme—you can use `group_by()`:
+If you want conditional proportions, for example, proportions within each theme, you can again use `group_by()`:
 
 ```{r}
 songs %>%

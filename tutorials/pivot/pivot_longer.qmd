@@ -2,7 +2,7 @@
 title: "From Wide to Long"
 ---
 
-A dataset is considered wide when repeated measurements are spread across multiple columns. For example, imagine we have a small subset of BFI data where each person has multiple personality items stored across separate columns:
+A dataset is considered wide when repeated measurements are spread across multiple columns. For example, imagine we have a small subset of Big Five Personality (BFI) data where each person has multiple personality items stored across separate columns:
 
 ```{r}
 library(dplyr)
@@ -14,9 +14,9 @@ bfi_small <- bfi %>%
 head(bfi_small)
 ```
 
-This is wide because the items A1, A2, and A3 are all separate variables, even though they represent repeated measures of the same underlying construct.
+This is wide because the items A1, A2, and A3 are all separate variables, even though they represent repeated measures of the same underlying construct within a person.
 
-To convert these columns into a long format, we use `pivot_longer()`:
+To convert these columns into a long format, we use `pivot_longer()` and select the variables we want to change from wide to long. Here, we also indicate how we want to name the new (now) single column (`values_to`), and specify the variable name that will consists of various categories indicating from which individual column the values originate (`names_to`).
 
 ```{r}
 bfi_small_long <- bfi_small %>%
@@ -28,10 +28,6 @@ bfi_small_long <- bfi_small %>%
 
 head(bfi_small_long)
 ```
-
-
-
-
 
 Now each row corresponds to a single item response, the item column tells us which item it was, the response column gives the value.
 

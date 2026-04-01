@@ -14,8 +14,8 @@ Welcome to the *Descriptive Statistics* module! In this module, you will learn a
 
 1. [Summarizing data](/tutorials/summarizing-data-baseR/index.qmd): How to calculate summary statistics for numeric data
 2. [Frequency tables](/tutorials/frequency-tables-baseR/index.qmd): How to summarize categorical data
-3. [Summarizing data with tidyverse](/tutorials/summarizing-data-tidy/index.qmd): How to calculate summary statistics for numeric data using the tidyverse
-4. [Frequency tables with tidyverse](/tutorials/frequency-tables-tidy/index.qmd): How to summarize categorical data using the tidyverse
+3. [Summarizing data with tidyverse](/tutorials/summarizing-data-tidy/index.qmd): How to calculate summary statistics for numeric data using tidyverse
+4. [Frequency tables with tidyverse](/tutorials/frequency-tables-tidy/index.qmd): How to summarize categorical data using tidyverse
 5. [pivoting tables](/tutorials/pivots/index.qmd): How to reshape and summarize data 
 
 
@@ -52,7 +52,7 @@ After completing this module, you will be able to:
 2. Add proportions and cumulative proportions using `mutate()`
 3. Create grouped or conditional frequency tables
 
-Pivoting and Reshaping Data
+### Pivoting tables
 
 1. Understand when long or wide format is most appropriate for descriptive analyses
 2. Use `pivot_longer()` to transform repeated measures into tidy long format

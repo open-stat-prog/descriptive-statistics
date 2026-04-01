@@ -32,4 +32,4 @@ songs %>%
   )
 ```
 
-You can also pipe the result directly into `knitr::kable()` or `gt::gt()` for presentation-quality tables in reports.
+You can also pipe the result directly into `knitr::kable()` or `gt::gt()` to present the tables more professionally in papers or reports.

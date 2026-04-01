@@ -3,7 +3,9 @@ title: "Proportion Table"
 ---
 
 ```{r, echo = FALSE}
-songs <- read.csv2(here::here("data", "songs.csv"),header=TRUE, sep=",")
+songs <- read.csv2(here::here("data", "songs.csv"),
+                   header=TRUE, 
+                   sep=",")
 ```
 
 We will now continue to work with the table that we made on the previous page. 
@@ -11,10 +13,11 @@ We will now continue to work with the table that we made on the previous page.
 As a first step, we can save the table as an object for further processing: 
 
 ```{r}
-table.theme <- table(songs$THEME, exclude = NULL)
+table.theme <- table(songs$THEME, 
+                     exclude = NULL)
 ```
 
-If we now use the command `prop.table()` on `table.theme`, we will see the proportions of the themes. This indicates how large the share of each theme is (with a number between 0 and 1). 
+If we now use the command `prop.table()` on the object `table.theme`, we will see the proportions of the themes. This indicates how large the share of each theme is (with a number between 0 and 1). 
 
 ```{r}
 prop.table(table.theme)
@@ -63,7 +66,8 @@ Make a frequency table and a proportion table for the variable `YEAR`. Use again
 ## {{< var tab_title.solution >}}
 
 ```{r}
-table.year <- table(songs$YEAR, exclude = NULL)
+table.year <- table(songs$YEAR, 
+                    exclude = NULL)
 table.year
 prop.table(table.year)
 
@@ -72,4 +76,4 @@ prop.table(table.year)
 
 :::
 
-As you can see, the table for the variable year is not very informative due to the large number of categories of the variable. Cumulative frequency tables can help with this problem. How to make them, you will learn on the next page.
+As you can see, the proportion table for the variable year is not very informative due to the large number of categories of the variable. Cumulative frequency tables can help with this problem. How to make them, you will learn on the next page.

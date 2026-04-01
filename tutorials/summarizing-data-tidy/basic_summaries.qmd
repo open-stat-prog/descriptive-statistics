@@ -40,7 +40,7 @@ library(dplyr)
 
 Try requesting the mean of `SPSTOCKS` from the `Stocks` dataset using `dplyr`. 
 
-*NOTE:* The `songs` dataset and the `dplyr` package are already loaded in the working directory of this *webr* session.
+*NOTE:* The `stocks` dataset and the `dplyr` package are already loaded in the working directory of this *webr* session.
 
 :::: {.panel-tabset}
 ## {{< var tab_title.editor >}}

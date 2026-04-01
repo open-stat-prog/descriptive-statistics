@@ -8,7 +8,7 @@ library(dplyr)
 ```
 
 Often, we want to apply the same summary function to several variables.
-The `across()` helper allows us to do this in a compact and readable way.
+The `across()` helper allows us to do this in a compact and readable way. Here, `everything()` can be used to select all variables in the dataset, and subsequently `.x` is commonly used to refer back to either `everyting()` or any other selection of variables you might have made.
 
 ```{webr-r}
 #| autorun: true
@@ -42,7 +42,7 @@ stocks %>%
 
 :::
 
-For example, to compute the mean of the Bonds and the S&P500:
+You can also make an explicit selection of a subset of variables. For example, to compute the mean of the Bonds and the S&P500:
 
 ```{r}
 library(dplyr)
@@ -51,7 +51,7 @@ stocks %>%
                     ~ mean(.x, na.rm = TRUE)))
 ```
 
-`across()` selects columns and applies a function—here, `mean()`—to each of them.
+`across()` selects columns `TBONDS_D` and `SPSTOCK`, and applies a function—here, `mean()`—to each of them (referred to as `.x` within the `mean()` function).
 
 We can also compute multiple summaries per variable by supplying a list of functions:
 

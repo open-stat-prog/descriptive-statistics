@@ -21,7 +21,7 @@ Answerlist
 
 Meta-information
 ================
-exname: Bad Question
+exname: Prop Table Question
 extype: schoice
 exsolution: 0010
 exshuffle: 4

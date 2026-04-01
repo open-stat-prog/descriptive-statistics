@@ -30,7 +30,7 @@ is.na(stocks)
 ```
 
 Both `anyNA()` and `is.na()` are generic methods of detecting standard missing values, and the output is not very informative. 
-*Non-standard missing values* are more difficult to find because `R` doesn’t know that they are missing. Depending on your research question, you may want to convert non-standard missing data responses to `NA` for smoother data manipulation. You may also decided that these types of responses are informative and that you want to keep them as they are.
+*Non-standard missing values* are more difficult to find because `R` doesn’t know that they are missing. Depending on your research question, you may want to convert non-standard missing data responses to `NA` for smoother data manipulation. You may also decide that these types of responses are informative and that you want to keep them as they are.
 
 ### Accounting for missing values when calculating summary statistics 
 

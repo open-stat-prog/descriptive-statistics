@@ -9,7 +9,7 @@ stocks <- read.csv(here::here("data", "stocks.csv"), header = TRUE, sep = ",", d
 
 
 
-The `summary()` function provides a handy overview of descriptive statistics. There is also another function that can do the same thing, and also provides a little more information: `describe()` from the `psych` package. We need to install the `psych` package once and then can load it via the library command. 
+The `summary()` function provides a handy overview of descriptive statistics. There is also another function that can do the same thing, and provides more useful information: `describe()` from the `psych` package. We need to install the `psych` package once and then can load it via the library command. 
 
 ```{r}
 #| message: false

@@ -10,7 +10,8 @@ The tidyverse provides the `count()` function, a clean and expressive way to pro
 
 ```{r}
 library(dplyr)
-songs %>% count(THEME)
+songs %>% 
+  count(THEME)
 ```
 
 This gives a simple table with two columns:
@@ -21,7 +22,9 @@ This gives a simple table with two columns:
 If you want the categories sorted from most to least frequent, you can add:
 
 ```{r}
-songs %>% count(THEME, sort = TRUE)
+songs %>% 
+  count(THEME, 
+        sort = TRUE)
 ```
 
 This replaces `sort(table(x))` with a single tidy and readable expression.
@@ -52,7 +55,8 @@ Make a frequency table for the variable `YEAR` with `dplyr`.
 ## {{< var tab_title.solution >}}
 
 ```{r}
-songs %>% count(YEAR)
+songs %>% 
+  count(YEAR)
 ```
 ::::
 
